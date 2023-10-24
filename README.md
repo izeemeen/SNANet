@@ -4,7 +4,7 @@ This repository contains the code for the models described in the study:
 
 "Adaptation supports short-term memory in a visual change detection task"
 
-A preprint is available at [https://www.biorxiv.org/content/10.1101/2020.03.06.977512v2.](https://www.mdpi.com/2313-7673/8/5/422)
+A preprint is available at https://www.mdpi.com/2313-7673/8/5/422
 
 ## Dependencies
 This code was developed on Ubuntu 16.04 with Pytorch 1.0+ using a single Nvidia RTX 1080 Ti GPU. Please note that newer versions of Pytorch may introduce breaking changes. To create a local virtual environment, use the following commands:
