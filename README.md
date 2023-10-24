@@ -11,10 +11,10 @@ This code was developed on Ubuntu 16.04 with Pytorch 1.0+ using a single Nvidia 
 
 ```bash
 # create a new conda environment
-conda create --name stspnet python=3.6
+conda create --name snanet python=3.6
 
 # activate the conda environment
-conda activate stspnet
+conda activate snanet
 
 # install pytorch and torchvision
 conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
@@ -27,7 +27,7 @@ git clone https://github.com/izeemeen/SNANet.git
 The code for pre-training convolutional neural networks on a grayscale version of the CIFAR-10 image recognition dataset and the resulting feature embeddings used in our paper can be found in the ```STSPNet_ROOT/cifar``` directory. We train 10 random model initializations and generate features on a held-out image dataset (image set "A"). Feature embeddings are also available for three other image sets, but these were not used in the paper (see ```STSPNet_ROOT/data``` for these other image sets).
 
 ## Training
-To train a model, run ```python main.py```. Any trained models will be saved to ```STSPNet_ROOT/PARAM/{STPNet,RNN}```. Please run ```python main.py --h``` to find out more about the possible command-line options. For example, to train a STPNet model:
+To train a model, run ```python main.py```. Any trained models will be saved to ```STSPNet_ROOT/PARAM/{SNANet,RNN}```. Please run ```python main.py --h``` to find out more about the possible command-line options. For example, to train a STPNet model:
 
 ```python
  python main.py --model SNANet --noise-std 0.5 --l2-penalty 0.001 --pos-weight 5 --dprime 1.5 --patience 5 --seed 1
@@ -36,7 +36,7 @@ To train a model, run ```python main.py```. Any trained models will be saved to 
 **Note:** Use the ```--no-cuda``` flag here and below if you want to run the cpu-only version of Pytorch.
 
 ## Evaluation
-To test a model, run ```python experiment.py```. You must pass an appropriate model path for loading a trained model. Model results will be saved as pickle files to ```STSPNet_ROOT/RESULT/{STPNet,RNN}```. Please run ```python experiment.py --h``` to see all possible command-line options. For example, to evaluate the STPNet model trained above:
+To test a model, run ```python experiment.py```. You must pass an appropriate model path for loading a trained model. Model results will be saved as pickle files to ```STSPNet_ROOT/RESULT/{SNANet,RNN}```. Please run ```python experiment.py --h``` to see all possible command-line options. For example, to evaluate the STPNet model trained above:
 
 ```python
 python experiment.py --model SNANet --model-path ./PARAM/STPNet/model_train_seed_1.pt --noise-std 0.5 --omit-frac 0.05 --seed 1
