@@ -24,7 +24,7 @@ git clone https://github.com/izeemeen/SNANet.git
 ```
 
 ## Pre-trained CIFAR-10 Models
-The code for pre-training convolutional neural networks on a grayscale version of the CIFAR-10 image recognition dataset and the resulting feature embeddings used in our paper can be found in the ```SNANet_ROOT/cifar``` directory. We train 10 random model initializations and generate features on a held-out image dataset (image set "A"). Feature embeddings are also available for three other image sets, but these were not used in the paper (see ```SNANet_ROOT/data``` for these other image sets).
+The code for pre-training convolutional neural networks on a grayscale version of the CIFAR-10 image recognition dataset and the resulting feature embeddings used in our paper can be found in the ```SNANet_ROOT/cifar``` directory.
 
 ## Training
 To train a model, run ```python main.py```. Any trained models will be saved to ```SNANet_ROOT/PARAM/{SNANet,RNN}```. Please run ```python main.py --h``` to find out more about the possible command-line options. For example, to train a STPNet model:
