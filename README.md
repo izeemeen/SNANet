@@ -4,7 +4,7 @@ This repository contains the code for the models described in the study:
 
 "Artificial Neural Network Model with Astrocyte-Driven Short-Term Memory"
 
-A preprint is available at https://www.mdpi.com/2313-7673/8/5/422
+An article is available at https://www.mdpi.com/2313-7673/8/5/422
 
 ## Dependencies
 This code was developed on Ubuntu 20.04 with Pytorch 1.0+. To create a local virtual environment, use the following commands:
@@ -36,7 +36,7 @@ To train a model, run ```python main.py```. Any trained models will be saved to 
 **Note:** Use the ```--no-cuda``` flag here and below if you want to run the cpu-only version of Pytorch.
 
 ## Evaluation
-To test a model, run ```python experiment.py```. You must pass an appropriate model path for loading a trained model. Model results will be saved as pickle files to ```SNANet_ROOT/RESULT/{SNANet,RNN}```. Please run ```python experiment.py --h``` to see all possible command-line options. For example, to evaluate the STPNet model trained above:
+To test a model, run ```python experiment.py```. You must pass an appropriate model path for loading a trained model. Model results will be saved as pickle files to ```SNANet_ROOT/RESULT/{SNANet,RNN}```. Please run ```python experiment.py --h``` to see all possible command-line options. For example, to evaluate the SNANet model trained above:
 
 ```python
 python experiment.py --model SNANet --model-path ./PARAM/SNANet/model_train_seed_1.pt --noise-std 0.5 --omit-frac 0.05 --seed 1
