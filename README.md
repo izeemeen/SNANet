@@ -7,17 +7,17 @@ This repository contains the code for the models described in the study:
 A preprint is available at https://www.mdpi.com/2313-7673/8/5/422
 
 ## Dependencies
-This code was developed on Ubuntu 16.04 with Pytorch 1.0+ using a single Nvidia RTX 1080 Ti GPU. Please note that newer versions of Pytorch may introduce breaking changes. To create a local virtual environment, use the following commands:
+This code was developed on Ubuntu 20.04 with Pytorch 1.0+. To create a local virtual environment, use the following commands:
 
 ```bash
 # create a new conda environment
-conda create --name snanet python=3.6
+conda create --name snanet python=3.8
 
 # activate the conda environment
 conda activate snanet
 
 # install pytorch and torchvision
-conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
+conda install pytorch torchvision
 
 # clone the repo
 git clone https://github.com/izeemeen/SNANet.git
