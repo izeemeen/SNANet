@@ -6,6 +6,9 @@ This repository contains the code for the models described in the study:
 
 An article is available at https://www.mdpi.com/2313-7673/8/5/422
 
+
+The SNANet model is based on the model from a study https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009246. 
+
 ## Dependencies
 This code was developed on Ubuntu 20.04 with Pytorch 1.0+. To create a local virtual environment, use the following commands:
 
