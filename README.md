@@ -2,7 +2,7 @@
 
 This repository contains the code for the models described in the study:
 
-"Adaptation supports short-term memory in a visual change detection task"
+"Artificial Neural Network Model with Astrocyte-Driven Short-Term Memory"
 
 A preprint is available at https://www.mdpi.com/2313-7673/8/5/422
 
